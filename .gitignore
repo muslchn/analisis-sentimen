@@ -1,0 +1,9 @@
+.venv/
+.deps/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+submission/
+
+analisis-sentimen-submission.zip
