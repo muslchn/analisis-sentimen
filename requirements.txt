@@ -1,1 +1,7 @@
+# Direct runtime dependency for scraping Google Play reviews.
 google-play-scraper==1.2.7
+
+# The preprocessing, feature extraction, model training, evaluation, and
+# inference code in train_sentiment.py uses only the Python standard library.
+# Therefore pandas, numpy, scikit-learn, tensorflow, matplotlib, and similar
+# packages are intentionally not required by the submitted code.

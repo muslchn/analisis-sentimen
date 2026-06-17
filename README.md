@@ -1,6 +1,6 @@
 # Proyek Analisis Sentimen
 
-Submission ini menggunakan ulasan Google Play berbahasa Indonesia sebagai data hasil scraping mandiri. Dataset dilabeli menjadi tiga kelas sentimen (`negatif`, `netral`, `positif`) dari rating ulasan, lalu dipakai untuk melatih dan membandingkan tiga skema model machine learning berbasis fitur teks.
+Submission ini menggunakan ulasan Google Play berbahasa Indonesia sebagai data hasil scraping mandiri. Dataset dilabeli menjadi tiga kelas sentimen (`negatif`, `netral`, `positif`) dari fitur leksikon sentimen pada teks ulasan, lalu dipakai untuk melatih dan membandingkan tiga skema model machine learning berbasis fitur teks.
 
 ## Struktur Berkas
 
@@ -17,6 +17,12 @@ Install dependensi:
 ```bash
 pip install -r requirements.txt
 ```
+
+Catatan dependensi: `google-play-scraper` digunakan untuk mengambil data ulasan
+Google Play. Tahap preprocessing, ekstraksi fitur, pelatihan model Naive Bayes,
+evaluasi, dan inference pada `train_sentiment.py` dibuat dengan Python standard
+library, sehingga tidak membutuhkan dependensi tambahan seperti `pandas`,
+`numpy`, `scikit-learn`, `tensorflow`, atau library visualisasi.
 
 Scrape ulang dataset:
 
